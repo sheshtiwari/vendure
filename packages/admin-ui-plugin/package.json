@@ -1,8 +1,10 @@
 {
   "name": "@vendure/admin-ui-plugin",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "module": "./lib/index.js",
-  "files": ["./lib"],
+  "files": [
+    "./lib"
+  ],
   "scripts": {
     "build": "rimraf lib && node build.js && yarn compile",
     "compile": "tsc -p ./tsconfig.build.json"
@@ -11,8 +13,8 @@
     "@types/express": "^4.0.39",
     "@types/fs-extra": "^5.0.4",
     "@types/http-proxy-middleware": "^0.19.2",
-    "@vendure/common": ">=0.1.0-alpha.1",
-    "@vendure/core": ">=0.1.0-alpha.1",
+    "@vendure/common": "^0.1.0-alpha.2",
+    "@vendure/core": "^0.1.0-alpha.18",
     "express": "^4.16.4",
     "rimraf": "^2.6.3"
   },
